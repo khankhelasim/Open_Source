@@ -74,7 +74,7 @@ ln original.txt /tmp/hardlink_fail.txt    # Expect: Invalid cross-device link
 ln -s $(pwd)/original.txt /tmp/symlink_success.txt
 cat /tmp/symlink_success.txt
 ```
-Key Takeaways
+## Key Takeaways
 
 Hard links
 
@@ -92,7 +92,7 @@ Can cross filesystems
 
 Break if the target file is removed
 
-Troubleshooting
+## Troubleshooting
 
 Broken symlink? → Check if target file exists
 
