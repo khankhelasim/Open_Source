@@ -1,0 +1,15 @@
+$ nano first_file.txt
+# (User enters text)
+
+$ cat first_file.txt
+Hello OpenShift!
+This is my first text file.
+
+$ vi second_file.txt
+# (Content added and edited)
+
+$ file first_file.txt
+first_file.txt: ASCII text
+
+$ wc -l podman_config.conf
+4 podman_config.conf
