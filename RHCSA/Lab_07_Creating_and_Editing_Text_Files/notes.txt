@@ -1,0 +1,25 @@
+Lab 7 - Notes
+
+Editors:
+- nano = simple and beginner-friendly
+- vi = powerful and preferred for servers
+
+Nano:
+Ctrl+O = Save
+Ctrl+X = Exit
+Ctrl+A / Ctrl+E = Jump to start/end of line
+
+Vi Modes:
+- Command mode
+- Insert mode (i)
+- Visual mode (v)
+dd = delete line
+:wq = save & quit
+:q! = quit without saving
+
+File Encoding:
+LF = Linux/Unix
+CRLF = Windows
+
+Commands:
+cat, less, file, unix2dos, dos2unix, wc, grep
