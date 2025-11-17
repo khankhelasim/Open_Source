@@ -1,0 +1,9 @@
+Lab 9 Summary – Creating Hard and Soft Links
+
+- Created hard links using ln and verified inode numbers.
+- Tested hard link behavior (shared data block).
+- Learned that deleting a hard link does not remove file data.
+- Created symbolic links using ln -s.
+- Observed that symbolic links break if the target file is deleted.
+- Tested cross-filesystem limitations (hard links fail, symlinks work).
+- Practiced verification using ls -l and ls -li.
