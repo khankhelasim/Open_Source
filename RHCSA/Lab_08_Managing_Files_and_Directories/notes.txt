@@ -1,0 +1,18 @@
+Lab 8 Notes – Managing Files and Directories
+
+Commands:
+mkdir = create directory
+mkdir -p = create nested directories
+mv = move or rename files
+cp = copy files
+cp -r = copy directories
+rm = delete files
+rm -r = delete directories recursively
+rmdir = delete empty directory
+tree = view directory hierarchy
+Wildcard: *.txt matches all .txt files
+
+Common Issues:
+- rmdir only works for empty dirs
+- rm -r is powerful; use carefully
+- Linux paths are case-sensitive
