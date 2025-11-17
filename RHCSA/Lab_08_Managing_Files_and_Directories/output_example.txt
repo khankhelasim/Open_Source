@@ -1,0 +1,14 @@
+$ mkdir lab_files
+$ mkdir -p parent/child/grandchild
+$ tree parent
+parent/
+└── child
+    └── grandchild
+
+$ touch sample.txt
+$ mv sample.txt lab_files/
+$ cp lab_files/sample.txt lab_files/sample_copy.txt
+$ rm lab_files/sample_copy.txt
+
+$ touch lab_files/file{1..5}.txt
+$ rm lab_files/*.txt
