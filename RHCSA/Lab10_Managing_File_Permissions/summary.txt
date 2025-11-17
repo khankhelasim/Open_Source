@@ -1,0 +1,7 @@
+Lab 10 Summary – Managing File Permissions (ugo/rwx)
+
+- Learned how to read Linux file permissions using ls -l.
+- Modified permissions using chmod symbolic (u/g/o + r/w/x) and numeric modes.
+- Changed file ownership with chown and group ownership with chgrp.
+- Reviewed best security practices for file permissions.
+- Practiced safe permission management in a multi-user environment.
