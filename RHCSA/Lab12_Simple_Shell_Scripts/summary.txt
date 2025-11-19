@@ -1,0 +1,8 @@
+Lab 12 Summary – Simple Shell Scripts
+
+- Created multiple shell scripts using bash
+- Learned script basics: shebang, variables, commands
+- Practiced if statements and for loops
+- Executed scripts using ./scriptname
+- Debugged scripts using bash -x
+- Understood common issues such as missing execution permissions and missing shebang
