@@ -95,7 +95,7 @@ pkill -9 firefox
 
 Terminates all processes matching the name.
 
-Conclusion
+## Conclusion
 
 In this lab, you learned how to:
 
