@@ -1,4 +1,4 @@
-# 🐧 Linux System Administration Labs (RHEL Part 1 & 2)
+# 🐧 Linux System Administration Labs (RHEL Part 1, Part 2 & RHCSA Module)
 
 Welcome to the **Linux System Administration Lab Repository** — a complete, hands-on journey through **Red Hat Enterprise Linux (RHEL)** fundamentals and advanced administration concepts.  
 This repository is organized into **modules**, where each module contains a **series of 20 labs** that cover essential system administration tasks, automation, networking, and server management.
@@ -7,10 +7,12 @@ This repository is organized into **modules**, where each module contains a **se
 
 ## 📘 Repository Overview
 
-| Module | Description | Labs Count | Status |
-|:-------|:-------------|:------------:|:-------|
-| **Module 1 – RHEL Administration Part 1** | Covers Linux fundamentals, user & group management, process control, package management, and basic system services. | 20 | ✅ Completed |
-| **Module 2 – RHEL Administration Part 2** | Focuses on advanced topics including storage, SELinux, system logging, file sharing (NFS), backups, and performance tuning. | 20 | ✅ Completed |
+| Module                                                        | Description                                                                                                                                                | Labs Count | Status         |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------- |
+| **Module 1 – RHEL Administration Part 1**                     | Covers Linux fundamentals, user & group management, packages, system services, process control, and OS basics.                                             | 20         | ✅ Completed    |
+| **Module 2 – RHEL Administration Part 2**                     | Includes advanced administration: storage, LVM, SELinux, system logging, NFS, backups, and performance tuning.                                             | 20         | ✅ Completed    |
+| **Module 3 – RHCSA (Red Hat Certified System Administrator)** | Focuses on RHCSA exam-style tasks including system configuration, file management, networking, automation basics, security, and essential troubleshooting. | 20         | ✅ Completed |
+
 
 Each lab folder includes:
 - 📄 **Objective** – What you’ll learn in the lab  
@@ -34,7 +36,13 @@ opensource/
 │   ├── Lab02/
 │   ├── ...
 │   └── Lab20/
+├── module3_RHCSA/
+│   ├── Lab01/
+│   ├── Lab02/
+│   ├── ...
+│   └── Lab20/
 └── README.md
+
 ```
 ### 🚀 How to Use
 
@@ -75,15 +83,19 @@ Prepare effectively for RHCSA / RHCE and DevOps fundamentals
 
 Linux (RHEL / CentOS / Fedora)
 
-Bash Scripting
+Bash Scripting & Automation
 
-Systemd & Journalctl
+Systemd, Journald
 
-Podman / Docker (for container labs)
+Containers (Podman / Docker)
 
-Networking, Storage, and SELinux
+Networking & Firewalls
 
-NFS, Cron, Logrotate, and rsyslog
+LVM, Storage, and SELinux
+
+NFS, Cron, Logrotate, rsyslog
+
+RHCSA Exam-Oriented Labs
 
 ## 🌐 Repository Link
 
@@ -94,14 +106,11 @@ NFS, Cron, Logrotate, and rsyslog
 ✅ Completed:
 
 ### Module 1 – RHEL Administration Part 1 (20 Labs)
-
 ### Module 2 – RHEL Administration Part 2 (20 Labs)
-
+### Module 3 – RHCSA (20 Labs)
 ## 🕒 Upcoming:
 
-### Module 3 – Automation & Scripting
-
-### Module 4 – DevOps with Containers & Ansible
+### Module 4 – Automation & Scripting
 
 
 ⭐ If you find this project helpful, don’t forget to star the repo!
