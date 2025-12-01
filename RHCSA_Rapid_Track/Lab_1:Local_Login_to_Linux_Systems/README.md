@@ -43,6 +43,7 @@ You should see something similar to:
 
 
 Fedora 38 (Workstation Edition)
+
 Kernel 6.2.15-200.fc38.x86_64 on an x86_64 (tty2)
 
 localhost login: _
