@@ -118,6 +118,7 @@ Expected Output Example:
 
 
 user1 tty2 2023-10-10 14:30
+
 user1 tty3 2023-10-10 14:35
 
 
