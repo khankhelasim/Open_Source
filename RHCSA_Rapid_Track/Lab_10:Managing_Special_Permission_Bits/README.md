@@ -4,7 +4,6 @@
 
 This lab focuses on **special Linux permission bits** — Sticky Bit, setuid, and setgid — which are critical for securing shared directories and controlling how executables run in multi-user Linux environments.
 
-This **README is fully ready-made and GitHub-ready** — copy and upload in one click.
 
 ---
 
