@@ -4,7 +4,6 @@
 
 This lab introduces **SELinux (Security-Enhanced Linux)**, a core security feature in RHEL-based systems. You will learn how to verify SELinux installation, understand and switch between its operating modes, and inspect or modify SELinux file contexts.
 
-This **README is fully ready-made and GitHub-ready** — copy and upload in one click, no edits required.
 
 ---
 
