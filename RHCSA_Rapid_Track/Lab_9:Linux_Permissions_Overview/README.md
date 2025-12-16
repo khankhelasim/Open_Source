@@ -4,7 +4,7 @@
 
 This lab introduces **Linux file and directory permissions**, a core concept for system security and access control. You will learn how to view, interpret, and modify permissions, as well as change file ownership and group assignments using standard Linux utilities.
 
-This **README is fully ready for GitHub upload** — no editing required.
+
 
 ---
 
