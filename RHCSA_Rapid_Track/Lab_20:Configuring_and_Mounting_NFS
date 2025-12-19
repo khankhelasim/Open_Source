@@ -1,0 +1,229 @@
+# Lab 20: Configuring and Mounting NFS
+
+## Objectives
+
+By the end of this lab, you will be able to:
+
+* Configure and manage an NFS server for centralized file sharing
+* Export directories using NFS server configuration
+* Mount NFS shares on a client system
+* Configure persistent NFS mounts using `/etc/fstab`
+* Verify and troubleshoot NFS connectivity
+
+---
+
+## Prerequisites
+
+* Two Linux systems (physical or virtual):
+
+  * One **NFS Server**
+  * One **NFS Client**
+* Root or sudo privileges on both systems
+* Network connectivity between server and client (`ping` must work)
+* Required packages:
+
+  * RHEL/CentOS/Fedora: `nfs-utils`
+  * Debian/Ubuntu: `nfs-kernel-server` (server), `nfs-common` (client)
+
+---
+
+## Task 1: Configure NFS Server
+
+### Subtask 1.1: Install and Start NFS Services
+
+**On the NFS Server:**
+
+```bash
+# RHEL / CentOS / Fedora
+sudo dnf install -y nfs-utils
+
+# Debian / Ubuntu
+sudo apt install -y nfs-kernel-server
+```
+
+Enable and start the NFS service:
+
+```bash
+sudo systemctl enable --now nfs-server
+systemctl status nfs-server
+```
+
+**Expected Outcome:**
+
+* NFS service is running and enabled at boot
+
+---
+
+### Subtask 1.2: Create and Export a Shared Directory
+
+Create the shared directory:
+
+```bash
+sudo mkdir /shared
+sudo chown nobody:nobody /shared
+sudo chmod 777 /shared
+```
+
+Edit the NFS exports configuration:
+
+```bash
+sudo nano /etc/exports
+```
+
+Add the following line (replace `client_ip` with the client IP or subnet):
+
+```text
+/shared client_ip(rw,sync,no_root_squash)
+```
+
+Apply the export configuration:
+
+```bash
+sudo exportfs -arv
+sudo exportfs -v
+```
+
+**Expected Outcome:**
+
+* `/shared` directory is successfully exported
+
+**Troubleshooting Tip:**
+
+```bash
+sudo systemctl restart nfs-server
+```
+
+---
+
+## Task 2: Configure NFS Client
+
+### Subtask 2.1: Install NFS Client Utilities
+
+**On the NFS Client:**
+
+```bash
+# RHEL / CentOS / Fedora
+sudo dnf install -y nfs-utils
+
+# Debian / Ubuntu
+sudo apt install -y nfs-common
+```
+
+---
+
+### Subtask 2.2: Mount the NFS Share
+
+Create a mount point:
+
+```bash
+sudo mkdir -p /mnt/nfs
+```
+
+Mount the NFS share temporarily:
+
+```bash
+sudo mount -t nfs server_ip:/shared /mnt/nfs
+```
+
+Verify the mount:
+
+```bash
+df -hT | grep nfs
+```
+
+**Expected Outcome:**
+
+* NFS filesystem is mounted successfully
+
+---
+
+### Subtask 2.3: Test Read/Write Access
+
+```bash
+sudo touch /mnt/nfs/testfile
+ls -l /mnt/nfs
+```
+
+**Expected Outcome:**
+
+* `testfile` is created successfully
+
+---
+
+## Task 3: Configure Persistent NFS Mounts
+
+### Subtask 3.1: Configure `/etc/fstab`
+
+Edit `/etc/fstab` on the client:
+
+```bash
+sudo nano /etc/fstab
+```
+
+Add the following entry:
+
+```text
+server_ip:/shared  /mnt/nfs  nfs  defaults  0  0
+```
+
+Test the configuration:
+
+```bash
+sudo mount -a
+```
+
+**Expected Outcome:**
+
+* No errors during mount
+
+---
+
+### Subtask 3.2: Reboot and Verify
+
+```bash
+sudo reboot
+```
+
+After reboot, verify:
+
+```bash
+df -hT | grep nfs
+```
+
+**Expected Outcome:**
+
+* NFS share is automatically mounted after reboot
+
+---
+
+## Conclusion
+
+In this lab, you successfully:
+
+* Configured an NFS server and exported shared directories
+* Mounted NFS shares on a client system
+* Tested read/write access across the network
+* Ensured persistence using `/etc/fstab`
+
+NFS is a critical component in Linux system administration and is widely used for shared storage in enterprise, cloud, and containerized environments.
+
+---
+
+## Troubleshooting Tips
+
+* **Access Denied Errors:** Check `/etc/exports` and client IP permissions
+* **Mount Failures:** Verify network connectivity and NFS service status
+* **Firewall Issues:** Ensure NFS-related services are allowed
+* **Performance Issues:** Consider using `async` (with caution)
+
+---
+
+## Next Steps
+
+* Explore NFS security (firewalls, Kerberos authentication)
+* Combine NFS with SELinux contexts
+* Practice mounting NFS inside containers or Kubernetes environments
+
+---
+
+**Lab 20 Complete 🎉**
