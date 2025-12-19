@@ -12,6 +12,7 @@ This repository is organized into **modules**, where each module contains a **se
 | **Module 1 – RHEL Administration Part 1**                     | Covers Linux fundamentals, user & group management, packages, system services, process control, and OS basics.                                             | 20         | ✅ Completed    |
 | **Module 2 – RHEL Administration Part 2**                     | Includes advanced administration: storage, LVM, SELinux, system logging, NFS, backups, and performance tuning.                                             | 20         | ✅ Completed    |
 | **Module 3 – RHCSA (Red Hat Certified System Administrator)** | Focuses on RHCSA exam-style tasks including system configuration, file management, networking, automation basics, security, and essential troubleshooting. | 20         | ✅ Completed |
+| **Module 4 – RHCSA (Rapid Track Course with Exam)**           | Focuses on RHCSA exam-style tasks including Time-bound troubleshooting scenarios.Realistic production-style labs, Reinforcement of RHCSA exam strategies   | 20         | ✅ Completed |
 
 
 Each lab folder includes:
@@ -26,21 +27,14 @@ Each lab folder includes:
 
 ```bash
 opensource/
-├── module1_RHEL_Admin_Part1/
-│   ├── Lab01/
-│   ├── Lab02/
-│   ├── ...
-│   └── Lab20/
-├── module2_RHEL_Admin_Part2/
-│   ├── Lab01/
-│   ├── Lab02/
-│   ├── ...
-│   └── Lab20/
-├── module3_RHCSA/
-│   ├── Lab01/
-│   ├── Lab02/
-│   ├── ...
-│   └── Lab20/
+├── Module-1-RHSA-I
+│   └── Labs
+├── Module-2-RHSA-II
+│   └── Labs
+├── Module-3-RHCSA
+│   └── Labs
+├── Module-4-RHCSA-Rapid-Track
+│   └── Labs
 └── README.md
 
 ```
@@ -108,9 +102,10 @@ RHCSA Exam-Oriented Labs
 ### Module 1 – RHEL Administration Part 1 (20 Labs)
 ### Module 2 – RHEL Administration Part 2 (20 Labs)
 ### Module 3 – RHCSA (20 Labs)
+### Module 4 – RHCSA rapid track with exam (20 Labs)
 ## 🕒 Upcoming:
 
-### Module 4 – Automation & Scripting
+### Module 5 – Automation & Scripting
 
 
 ⭐ If you find this project helpful, don’t forget to star the repo!
