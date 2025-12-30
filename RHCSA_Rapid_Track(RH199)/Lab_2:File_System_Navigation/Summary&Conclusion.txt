@@ -1,0 +1,35 @@
+Lab Summary and Conclusion
+
+You have successfully completed Lab 2: File System Navigation.
+
+Key Skills Developed
+
+Linux directory navigation
+
+File and directory organization
+
+Permission management (numeric & symbolic)
+
+Core command-line proficiency
+
+Why This Matters
+
+Essential for RHCSA preparation
+
+Improves Linux security understanding
+
+Forms the foundation for automation and scripting
+
+Critical for real-world troubleshooting
+
+Next Steps
+
+You are now ready to:
+
+Navigate complex file systems confidently
+
+Manage permissions securely
+
+Apply these skills in advanced system administration tasks
+
+End of Lab 2
