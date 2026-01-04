@@ -17,3 +17,4 @@ This lab focuses on **Linux file permissions, ownership, and Access Control List
 - RHEL / CentOS-based Linux
 - Root or sudo access
 - ACL utilities installed
+<img width="825" height="828" alt="Screenshot 2026-01-04 162536" src="https://github.com/user-attachments/assets/d0b6a610-56b0-477d-9f40-7d57c8e6e129" />
