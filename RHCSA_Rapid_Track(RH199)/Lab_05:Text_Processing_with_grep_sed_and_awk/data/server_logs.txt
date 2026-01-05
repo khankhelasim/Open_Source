@@ -1,0 +1,10 @@
+2024-01-15 10:30:15 INFO: Server started successfully
+2024-01-15 10:31:22 ERROR: Database connection failed
+2024-01-15 10:32:10 WARNING: High memory usage detected
+2024-01-15 10:33:45 INFO: User login: admin
+2024-01-15 10:34:12 ERROR: File not found: /var/log/app.log
+2024-01-15 10:35:30 INFO: Backup process completed
+2024-01-15 10:36:18 WARNING: Disk space low
+2024-01-15 10:37:25 ERROR: Network timeout occurred
+2024-01-15 10:38:40 INFO: User logout: admin
+2024-01-15 10:39:55 INFO: System maintenance scheduled
