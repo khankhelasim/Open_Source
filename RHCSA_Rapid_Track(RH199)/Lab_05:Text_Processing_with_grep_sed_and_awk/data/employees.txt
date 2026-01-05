@@ -1,0 +1,5 @@
+John Smith,Manager,Sales,75000
+Jane Doe,Developer,IT,65000
+Mike Johnson,Analyst,Finance,55000
+Sarah Wilson,Manager,IT,80000
+Tom Brown,Developer,IT,60000
