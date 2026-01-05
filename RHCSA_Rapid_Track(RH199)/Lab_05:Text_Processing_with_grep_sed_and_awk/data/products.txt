@@ -1,0 +1,10 @@
+Laptop,Electronics,999.99,50
+Mouse,Electronics,29.99,200
+Keyboard,Electronics,79.99,150
+Chair,Furniture,299.99,25
+Desk,Furniture,499.99,15
+Monitor,Electronics,399.99,75
+Headphones,Electronics,149.99,100
+Lamp,Furniture,89.99,40
+Notebook,Office,12.99,500
+Pen,Office,2.99,1000
