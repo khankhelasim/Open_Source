@@ -3,3 +3,8 @@ Jane Doe,Developer,IT,65000
 Mike Johnson,Analyst,Finance,55000
 Sarah Wilson,Manager,IT,80000
 Tom Brown,Developer,IT,60000
+Lisa Davis,Analyst,Sales,50000
+Robert Taylor,Manager,Finance,85000
+Emily White,Developer,IT,62000
+David Lee,Analyst,IT,58000
+Maria Garcia,Manager,Sales,78000
