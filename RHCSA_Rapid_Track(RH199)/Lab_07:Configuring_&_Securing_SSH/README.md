@@ -6,6 +6,8 @@
 
 This lab focuses on installing, configuring, testing, and securing the OpenSSH service on Linux systems. SSH (Secure Shell) is the backbone of remote Linux administration in enterprise environments. In this lab, you will move from basic SSH setup to hardened, key-based authentication aligned with RHCSA objectives and real-world best practices.
 
+<img width="814" height="382" alt="image" src="https://github.com/user-attachments/assets/aaa28bfd-8aeb-466e-a65c-27e799a8ffcd" />
+
 ### Objectives
 
 By completing this lab, you will be able to:
