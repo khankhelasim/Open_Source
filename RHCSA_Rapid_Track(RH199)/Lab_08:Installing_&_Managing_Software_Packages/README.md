@@ -31,4 +31,26 @@ You will learn how to install, query, update, remove, and troubleshoot software 
 * Basic idea of what software packages are
 
 ---
+## Tasks
+* All the tasks are briefly described in Task.md
+
+---
+
+## Conclusion
+
+You have successfully learned how to **install, query, update, and remove software packages** using dnf, yum, and rpm. These skills are **mandatory for RHCSA certification** and critical for maintaining secure, stable Linux systems.
+
+### Why This Matters
+
+Proper package management ensures:
+
+* System security through updates
+* Stability by managing dependencies
+* Consistent software deployment
+
+### Next Steps
+
+* Practice package rollbacks
+* Learn repository configuration
+* Explore package signing and verification
 
