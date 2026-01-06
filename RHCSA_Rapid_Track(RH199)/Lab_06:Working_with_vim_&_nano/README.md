@@ -1,7 +1,7 @@
 # Lab 6: Working with vim and nano
 
 ## README.md
-
+<img width="837" height="776" alt="Screenshot 2026-01-06 143624" src="https://github.com/user-attachments/assets/80235774-5e7e-49c4-a864-85d9e7358efa" />
 ### Overview
 
 This lab covers hands-on usage of **nano** and **vim**, the two most commonly used text editors in Linux environments. The goal is to help you confidently edit configuration files, troubleshoot mistakes, and work efficiently on servers — a **core RHCSA skill**.
@@ -21,7 +21,7 @@ This lab covers hands-on usage of **nano** and **vim**, the two most commonly us
 * Working in minimal server environments
 
 ---
-<img width="837" height="776" alt="Screenshot 2026-01-06 143624" src="https://github.com/user-attachments/assets/80235774-5e7e-49c4-a864-85d9e7358efa" />
+
 
 This lab focuses on mastering **nano** and **vim**, two essential Linux text editors used daily by system administrators.
 
