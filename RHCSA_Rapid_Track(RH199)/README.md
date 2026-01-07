@@ -7,6 +7,8 @@ All labs are performed in a Linux environment and follow practical scenarios ali
 
 ---
 
+<img width="1686" height="772" alt="Screenshot 2025-12-25 161946" src="https://github.com/user-attachments/assets/199a91bb-adfe-499f-bc85-67b1320b4a8b" />
+
 ## 📌 Module Overview
 
 The **RH199 Rapid Track** focuses on strengthening both foundational and advanced Linux administration concepts.  
