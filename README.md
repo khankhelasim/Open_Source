@@ -25,7 +25,7 @@ This repository is structured into **modules**, where each module contains **20 
 | **Module 1 – RHEL Administration Part 1**                     | Linux fundamentals, users & groups, permissions, packages, services, process management, and OS basics.                                                                   | 20   | ✅ Completed |
 | **Module 2 – RHEL Administration Part 2**                     | Advanced administration: storage, LVM, SELinux, logging, NFS, backups, scheduling, and performance tuning.                                                                | 20   | ✅ Completed |
 | **Module 3 – RHCSA (Red Hat Certified System Administrator)** | RHCSA exam-style labs covering system configuration, file management, networking, security, automation basics, and troubleshooting.                                       | 20   | ✅ Completed |
-| **Module 4 – RHCSA Rapid Track (RH199)**                      | Time-bound troubleshooting scenarios, realistic production-style labs, and intensive RHCSA exam strategy reinforcement.                                                   | 20   | ✅ Completed |
+| **Module 4 – RHCSA Rapid Track**                      | Time-bound troubleshooting scenarios, realistic production-style labs, and intensive RHCSA exam strategy reinforcement.                                                   | 20   | ✅ Completed |
 | **Module 5 – RHCSA Rapid Track (RH199)**                      | Advanced container-focused RHCSA labs including Podman, container networking & storage, SELinux with containers, NFS & Ceph storage, logging, and Kubernetes integration. | 20   | ✅ Completed |
 
 ---
@@ -51,7 +51,7 @@ opensource/
 │   └── Labs
 ├── Module-3-RHCSA
 │   └── Labs
-├── Module-4-RHCSA-Rapid-Track-RH199
+├── Module-4-RHCSA-Rapid-Track-
 │   └── Labs
 ├── Module-5-RHCSA-Rapid-Track-RH199
 │   └── Labs
