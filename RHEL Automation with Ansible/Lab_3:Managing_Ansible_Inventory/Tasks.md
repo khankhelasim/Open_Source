@@ -15,28 +15,6 @@ Create inventory file:
 nano inventory.ini
 ```
 
-```ini
-# Basic Static Inventory File
-
-[webservers]
-web1 ansible_host=192.168.1.10 ansible_user=student
-web2 ansible_host=192.168.1.11 ansible_user=student
-
-[databases]
-db1 ansible_host=192.168.1.20 ansible_user=student
-
-[production:children]
-webservers
-databases
-
-[webservers:vars]
-http_port=80
-max_clients=200
-
-[databases:vars]
-mysql_port=3306
-max_connections=100
-```
 
 ---
 
@@ -48,53 +26,6 @@ Create advanced inventory:
 nano advanced-inventory.ini
 ```
 
-```ini
-[webservers]
-web1 ansible_host=192.168.1.10 ansible_user=student server_role=frontend
-web2 ansible_host=192.168.1.11 ansible_user=student server_role=frontend
-
-[databases]
-db1 ansible_host=192.168.1.20 ansible_user=student server_role=backend
-
-[loadbalancers]
-lb1 ansible_host=192.168.1.30 ansible_user=student server_role=loadbalancer
-
-[production:children]
-webservers
-databases
-loadbalancers
-
-[staging]
-staging-web ansible_host=192.168.1.40 ansible_user=student
-staging-db ansible_host=192.168.1.41 ansible_user=student
-
-[east-coast]
-web1
-db1
-
-[west-coast]
-web2
-lb1
-
-[all:vars]
-ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-
-[webservers:vars]
-http_port=80
-https_port=443
-document_root=/var/www/html
-max_clients=200
-
-[databases:vars]
-mysql_port=3306
-mysql_datadir=/var/lib/mysql
-max_connections=100
-innodb_buffer_pool_size=256M
-
-[loadbalancers:vars]
-balance_method=roundrobin
-health_check_interval=30
-```
 
 ---
 
@@ -106,44 +37,7 @@ Create YAML inventory:
 nano inventory.yml
 ```
 
-```yaml
-all:
-  children:
-    webservers:
-      hosts:
-        web1:
-          ansible_host: 192.168.1.10
-          ansible_user: student
-          server_role: frontend
-          http_port: 80
-        web2:
-          ansible_host: 192.168.1.11
-          ansible_user: student
-          server_role: frontend
-          http_port: 80
-      vars:
-        max_clients: 200
-        document_root: /var/www/html
 
-    databases:
-      hosts:
-        db1:
-          ansible_host: 192.168.1.20
-          ansible_user: student
-          server_role: backend
-          mysql_port: 3306
-      vars:
-        max_connections: 100
-        mysql_datadir: /var/lib/mysql
-
-    production:
-      children:
-        webservers:
-        databases:
-      vars:
-        environment: production
-        backup_schedule: "0 2 * * *"
-```
 
 ---
 
